@@ -5,4 +5,9 @@ public class TimeCrunch {
 
     Example:
      */
+    public static void main(String[] args) {
+        int seconds = 30;
+
+        int  minutes =
+    }
 }
