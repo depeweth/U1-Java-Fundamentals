@@ -1,3 +1,5 @@
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 public class TimeCrunch {
 
     /*
@@ -6,8 +8,18 @@ public class TimeCrunch {
     Example:
      */
     public static void main(String[] args) {
-        int seconds = 30;
+        int seconds = 520000;
 
-        int  minutes =
+
+         int numHours = seconds/3600;
+         seconds = seconds % 3600;
+         int numMinutes = seconds/60;
+         seconds = seconds % 60;
+         int numSeconds = seconds;
+
+        System.out.println("Hours: " + numHours);
+        System.out.println("Minutes: " + numMinutes);
+        System.out.println("Seconds " + numSeconds);
+
     }
 }
